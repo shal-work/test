@@ -200,7 +200,9 @@ let store = {
             ]
         },
         answer: [],
-        number: 1
+        number: 1,
+        countTrue: 0,
+        countFalse: 0
     },
     getState() {
         return this._state;
@@ -239,6 +241,7 @@ let store = {
         if (this._state.questions.item[this._varAnswer.id - 1].var[0] === this._varAnswer.text) {
             this._state.answer = this._state.answer.map(q => {
                 if (q.id === this._varAnswer.id) {
+                    this._state.countTrue++;
                     return {...q, correctAnswer: true, viewAnswer: true }
                 }
                 return q;
@@ -246,6 +249,7 @@ let store = {
         } else {
             this._state.answer = this._state.answer.map(q => {
                 if (q.id === this._varAnswer.id) {
+                    this._state.countFalse++;
                     return {...q, correctAnswer: false, viewAnswer: true }
                 }
                 return q;
@@ -283,5 +287,5 @@ let store = {
         this._renderEntireTree = observer;
     }
 };
-
+window.store = store;
 export default store;

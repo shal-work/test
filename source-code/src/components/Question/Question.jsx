@@ -9,7 +9,11 @@ const Question = (props) => {
     return (
         <div className={s.mainQuestion}>
             <NumberQueastion index={props.index} getQuantity={props.getQuantity}/>
-            <Circle answer={props.answer}/>
+            <Circle 
+                answer={props.answer} 
+                countTrue = {props.countTrue}
+                countFalse = {props.countFalse}
+            />
             {props.getGo()
                 ? <TextQueastion text={props.text} index={props.index}/>
                 : <></>

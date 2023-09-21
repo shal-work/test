@@ -15,7 +15,10 @@ const Header = (props) => {
                 text={props.state.questions.item[index].text} 
                 index={props.state.number} 
                 getGo={props.getGo} 
-                getQuantity={props.getQuantity}/>
+                getQuantity={props.getQuantity}
+                countTrue = {props.state.countTrue}
+                countFalse = {props.state.countFalse}
+            />
         </div>
     )
 }
