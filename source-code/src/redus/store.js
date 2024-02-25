@@ -4,198 +4,198 @@ let store = {
         questions: {
             item: [
                 {
-                    id:1, 
+                    id:1,
                     text: 'Какие из этих тегов относятся к элементу <table>?',
-                    var: [ 
-                        '<table><tr><td>', 
-                        '<table><tr><tt>', 
-                        '<table><head><tfoot>', 
+                    var: [
+                        '<table><tr><td>',
+                        '<table><tr><tt>',
+                        '<table><head><tfoot>',
                         '<thead><body><tr>'
                     ]
                 },
                 {
-                    id:2, 
+                    id:2,
                     text: 'Как открыть ссылку в новой вкладке / окне браузера?',
-                    var: [ 
-                        '<a href="url" target="_blank">Текст</a>', 
-                        '<a href="url" new>Текст</a>', 
+                    var: [
+                        '<a href="url" target="_blank">Текст</a>',
+                        '<a href="url" new>Текст</a>',
                         '<a href="url" target="new">Текст</a>'
                     ]
                 },
                 {
-                    id:3, 
+                    id:3,
                     text: 'В каком месте HTML документа должны определяться теги <title>, <link> и <meta>?',
-                    var: [ 
-                        'В секции <head>', 
-                        'В секции <body>', 
+                    var: [
+                        'В секции <head>',
+                        'В секции <body>',
                         '<footer>'
                     ]
                 },
                 {
-                    id:4, 
+                    id:4,
                     text: 'Кто создает веб-стандарты?',
-                    var: [ 
-                        'World Wide Web Consortium (W3C)', 
-                        'Google', 
+                    var: [
+                        'World Wide Web Consortium (W3C)',
+                        'Google',
                         'Mozilla',
                         'Microsoft'
                     ]
                 },
-                {   
-                    id:5, 
+                {
+                    id:5,
                     text: 'Для какого тега элемент <!DOCTYPE> выступает родителем?',
-                    var: [ 
-                        'Ни для одного тега', 
-                        '<BODY>', 
+                    var: [
+                        'Ни для одного тега',
+                        '<BODY>',
                         '<TITLE>',
                         '<HTML>',
                         '<HEAD>'
                     ]
                 },
-                {   
-                    id:6, 
+                {
+                    id:6,
                     text: 'Укажите тег позволяющий определить нумерованный список.',
-                    var: [ 
-                        '<ol>', 
-                        '<ul', 
+                    var: [
+                        '<ol>',
+                        '<ul',
                         '<li>',
                         '<list>'
                     ]
                 },
-                {   
-                    id:7, 
+                {
+                    id:7,
                     text: 'В каком формате определяется графика SVG?',
-                    var: [ 
-                        'XML', 
-                        'HTML', 
+                    var: [
+                        'XML',
+                        'HTML',
                         'CSS'
                     ]
                 },
-                {   
-                    id:8, 
+                {
+                    id:8,
                     text: 'Требуется вывести на страницу код, который написан на языке Java. Какой тег для этого необходимо использовать?',
-                    var: [ 
-                        '<code>', 
-                        '<java>', 
+                    var: [
+                        '<code>',
+                        '<java>',
                         '<pre>',
                         '<p>'
                     ]
                 },
-                {   
-                    id:9, 
+                {
+                    id:9,
                     text: 'Можно ли использовать фреймы в HTML документах с переходным (transitional) DTD ?',
-                    var: [ 
-                        'Да', 
+                    var: [
+                        'Да',
                         'Нет'
                     ]
                 },
-                {   
-                    id:10, 
+                {
+                    id:10,
                     text: 'Какой тип ввода определяет ползунок?',
-                    var: [ 
-                        'range', 
-                        'controls', 
+                    var: [
+                        'range',
+                        'controls',
                         'search',
                         'slider'
                     ]
                 },
-                {   
-                    id:11, 
+                {
+                    id:11,
                     text: 'Тег <iframe> используется для отображения веб-страницы внутри веб-страницы.',
-                    var: [ 
-                        'Да', 
-                        'Нет такого элемента <iframe>', 
+                    var: [
+                        'Да',
+                        'Нет такого элемента <iframe>',
                         'Нет'
                     ]
                 },
-                {   
-                    id:12, 
+                {
+                    id:12,
                     text: 'Какой атрибут определяет альтернативный текст для изображения, если изображение не может быть отображено?',
-                    var: [ 
-                        'alt', 
-                        'src', 
+                    var: [
+                        'alt',
+                        'src',
                         'title'
                     ]
                 },
-                {   
-                    id:13, 
+                {
+                    id:13,
                     text: 'Какое расширение должны иметь HTML документы?',
-                    var: [ 
-                        '.html или .htm', 
-                        '.php или .asp', 
+                    var: [
+                        '.html или .htm',
+                        '.php или .asp',
                         '.txt или .doc',
                         '.doc'
                     ]
                 },
-                {   
-                    id:14, 
+                {
+                    id:14,
                     text: 'Выберите HTML-элемент для создания заголовка с высшим приоритетом:',
-                    var: [ 
-                        '<h1></h1>', 
-                        '<head></head>', 
+                    var: [
+                        '<h1></h1>',
+                        '<head></head>',
                         '<h6></h6>',
                         '<heading></heading>'
                     ]
                 },
-                {   
-                    id:15, 
+                {
+                    id:15,
                     text: 'Какой элемент используется для отображения скалярного измерения в пределах диапазона?',
-                    var: [ 
-                        '<meter></meter>', 
-                        '<gauge></gauge>', 
+                    var: [
+                        '<meter></meter>',
+                        '<gauge></gauge>',
                         '<measure></measure>',
                         '<range></range>'
                     ]
                 },
-                {   
-                    id:16, 
+                {
+                    id:16,
                     text: 'Выберите перечень, в котором все теги являются устаревшими.',
-                    var: [ 
-                        '<strike>, <font> и <center>', 
-                        '<center>, <span> и <div>', 
+                    var: [
+                        '<strike>, <font> и <center>',
+                        '<center>, <span> и <div>',
                         '<u>, <b> и <s>',
                         '<menu>, <font> и <span>'
                     ]
                 },
-                {   
-                    id:17, 
+                {
+                    id:17,
                     text: 'Укажите тег позволяющий определить таблицу',
-                    var: [ 
-                        '<table></table>', 
-                        '<tabs></tabs>', 
+                    var: [
+                        '<table></table>',
+                        '<tabs></tabs>',
                         '<tr></tr>',
                         '<tab></tab>'
                     ]
                 },
-                {   
-                    id:18, 
+                {
+                    id:18,
                     text: 'Папки images и pages лежат в корне сайта. В папке images лежит файл foto.jpg. Как правильно написать путь к foto.jpg из файла page.html?',
-                    var: [ 
-                        '../images/foto.jpg', 
-                        'pages/images/foto.jpg', 
+                    var: [
+                        '../images/foto.jpg',
+                        'pages/images/foto.jpg',
                         '../images/pages/foto.jpg',
                         'images/foto.jpg'
                     ]
                 },
-                {   
-                    id:19, 
+                {
+                    id:19,
                     text: 'Какой элемент HTML определяет заголовок документа?',
-                    var: [ 
-                        '<title></title>', 
-                        '<head></head>', 
+                    var: [
+                        '<title></title>',
+                        '<head></head>',
                         '<meta></meta>'
                     ]
                 },
-                {   
-                    id:20, 
+                {
+                    id:20,
                     text: 'Какой HTML-код предназначен для вставки фонового изображения?',
-                    var: [ 
-                        '<body style="background-image:url(background.gif)">', 
-                        '<background img="background.gif">', 
+                    var: [
+                        '<body style="background-image:url(background.gif)">',
+                        '<background img="background.gif">',
                         '<body bg="background.gif">'
                     ]
                 }
-                
+
 
             ]
         },
@@ -230,11 +230,11 @@ let store = {
         return this._checkingDo;
     },
     _varAnswer: {
-        id: 1, 
-        text: '' 
+        id: 1,
+        text: ''
     },
     versionAnswer (answer) {
-        this._varAnswer.id = answer.id; 
+        this._varAnswer.id = answer.id;
         this._varAnswer.text = answer.text;
     },
     addAnswer () {
@@ -255,15 +255,10 @@ let store = {
                 return q;
             })
         }
-        
+
         this._addNumber();
         this._shuffleVar();
         this._renderEntireTree(this._state);
-    },
-    shuffleOptions(){
-        let arr = {item: this._shuffleVar(), id: this._state.number};
-        // debugger
-        return arr;
     },
     _addNumber(){
         if (this._state.number < this.getQuantity()) {
@@ -271,6 +266,11 @@ let store = {
         } else {
             this._checkingDo = false;
         }
+    },
+    shuffleOptions(){
+        let arr = {item: this._shuffleVar(), id: this._state.number};
+        // debugger
+        return arr;
     },
     _shuffleVar() {
         let num = this._state.number;

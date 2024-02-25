@@ -7,6 +7,9 @@
 .title {
     margin: 0 2% 2%;
 }
+.mainIntro__description {
+    margin-top: 1%;
+}
 @media (max-width: 800px) {
 	.title {
 		font-size: calc(var(--index) * 1.2 );
@@ -39,6 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -1.2em;
 }
 .mainIntro__logo > .logo {
     max-width: 128px;
@@ -49,8 +53,8 @@
     .mainIntro__logo > .logo {
 		width: calc(var(--index) * 8 );
 	}
-    
-} 
+
+}
 @media (max-width: 800px) and (min-aspect-ratio: 128/128) {
     .mainIntro__logo > .logo {
 		width: calc(var(--index) * 8 );
@@ -62,13 +66,14 @@
     justify-content: center;
     flex-direction: column;
     padding: 1% 2%;
+    /* font-family: 'Courier New', Courier, monospace; */
 }
 @media  (max-width: 800px) {
     .mainIntro__text {
 		font-size: calc(var(--index) * 1.2 );
 	}
-    
-} 
+
+}
 @media (max-width: 800px) and (min-aspect-ratio: 128/128) {
     .mainIntro__text {
 		font-size: calc(var(--index) * 1.2 );
@@ -76,9 +81,12 @@
 }
 @media  (max-width: 400px) {
     .mainIntro__text {
-		font-size: 12px;
+		font-size: 13px;
 	}
-} 
+    .mainIntro {
+        margin-top: 0px;
+    }
+}
 @media (max-width: 400px) and (min-aspect-ratio: 300/128) {
     .mainIntro__text {
 		font-size: 12px;

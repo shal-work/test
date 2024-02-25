@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Question.module.css';
-import useWindowDimensions from '../Hook/GetWindowDimensions';
+import useWindowDimensions from '../../../Hook/GetWindowDimensions';
 
 
 const Circle = (props) => {

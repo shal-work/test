@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Header.module.css';
-import Question from '../Question/Question';
+import Question from './Question/Question';
 import MainIntro from './MainIntro';
 import Title from './Title';
 

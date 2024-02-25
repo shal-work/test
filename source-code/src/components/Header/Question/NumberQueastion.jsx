@@ -4,10 +4,10 @@ import s from './Question.module.css';
 const NumberQueastion = (props) => {
     return (
         <div className={s.mainQuestion__quantity}>
-            Вопрос 
-            <span className="current">&ensp;{props.index}</span> 
+            Вопрос
+            <span><strong>&ensp;{props.index}</strong></span>
             <span> из </span>
-            <span className="total">{props.getQuantity()}</span>
+            <span><strong>{props.getQuantity()}</strong></span>
         </div>
     )
 }
