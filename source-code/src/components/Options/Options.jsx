@@ -9,8 +9,8 @@ const Options = (props) => {
     const addResponse = (e) => {
         let textAnswer = e.target.value;
         let newAnswer = {
-            id: props.state.number, 
-            text: textAnswer 
+            id: props.state.count,
+            text: textAnswer
         }
         props.versionAnswer(newAnswer);
     }
@@ -26,19 +26,19 @@ const Options = (props) => {
             }
         }
     })
- 
-    let variantMap = variant.item.map((v, index) => 
+
+    let variantMap = variant.text.map((v, index) =>
         <li key={index}>
             <input className="question-options" id={'question_' + index} name='question' type="radio" onChange={addResponse} value={v} />
             <label className={s.answer} htmlFor={'question_' + index}>{v}</label>
         </li>
     )
-    if( props.getGo()) { 
+    if( props.getGo()) {
         return (
             <ul className={s.answers}>
                 {variantMap}
             </ul>
-            
+
         )
     } else {
         return (<div></div>)
@@ -46,4 +46,3 @@ const Options = (props) => {
 }
 
 export default Options;
-

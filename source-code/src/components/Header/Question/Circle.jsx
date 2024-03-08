@@ -5,7 +5,7 @@ import useWindowDimensions from '../../../Hook/GetWindowDimensions';
 
 const Circle = (props) => {
     const { width, height } = useWindowDimensions();
-    let circleElement = props.answer.map( p => {
+    let circleElement = props.circleElement.map( p => {
         if(!p.viewAnswer) {
             return <div className={s.circle__target} key={p.id}/>
         } else {
@@ -30,11 +30,6 @@ const Circle = (props) => {
             </div>
         )
     }
-    // return (
-    //     <div className={s.circle}>
-    //         {circleElement}
-    //     </div>
-    // )
 }
 
 export default Circle;
