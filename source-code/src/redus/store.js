@@ -282,7 +282,7 @@ let store = {
         }
         return array;
     },
-    subscribe (observer){
+    _subscribe (observer){
         this._renderEntireTree = observer;
     }
 };
@@ -307,5 +307,6 @@ export const shuffleOptions = () => {
     return store.shuffleOptions();
 }
 export const subscribe = (observer) => {
-    store._renderEntireTree = observer;
+    // store._renderEntireTree = observer;
+    store._subscribe(observer);
 };
